@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DrivenEats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <div class="conteudo">
+    <div class="trasnparente escondido">
+      <div class="informacoes">
+        <p>Confirme seu pedido<p>
+        <div class="itens">
+          <div class="fechado">
+            <h6 class="prato">Calabresa</h6>
+        <span class="preco-prato">14.90 </span>
+          </div>
+        <div class="fechado">
+          <h6 class="bebida">Fanta</h6>
+          <span class="preco-bebida">4.50</span>
+        </div>
+        <div class="fechado">
+          <h6 class="doce">Pudim</h6>
+          <span class="preco-sobremesa">9.50</span>
+        </div>
+        <div class="total">
+          <span class="valor-total"> TOTAL :</span>
+          <span class="preco-total">28.90</span>
+        </div>    
+    </div>
+    <div class="a">
+      <a onclick="mandarmsg()"> Tudo certo, pode pedir!</a>
+    </div> 
+        <div class="botao-confirmacao">
+        <button class="cancelar" onclick="cancelar()">Cancelar</button>
+      </div>
+      </div>
+      </div>
+    </div>
+     <div class="topo">
+        <p>DrivenEats</p>
+        <h1>Sua comida em 6 minutos</h1>
+    </div>    
+     <div class="cardapio">
+        <h2>Primeiro, seu prato</h2>
+    <div class="pf">
+       <div class="pratos">
+        <button class="calabresa" onclick="selecionarPrato(this)">
+        <img src="imagens/pf_calabresa.png"> 
+        <h4>Calabresa</h4> 
+        <h3> arroz, feijão e fritas</h3>
+        <h5>14.90<h5>
+      </button>
+       </div>
+       <div class="pratos">
+        <button class="carne" onclick="selecionarPrato(this)">
+        <img src="imagens/pf_carne.jpg"> 
+        <h4>Carne a cavala</h4> 
+        <h3>  arroz, feijão e fritas</h3>
+        <h5 >15.20</h5>
+        </button>
+       </div>
+       <div class="pratos">
+        <button class="frango" onclick="selecionarPrato(this)">
+          <img src="imagens/pf_frango.jpg"> 
+          <h4>Filé de frango</h4> 
+          <h3>arroz, feijão e fritas</h3>
+          <h5>17.90</h5>
+        </button>     
+      </div>
+    </div>
+    <h2>Agora, sua bebida</h2>
+    <div class="drinks">
+        <div class="bebidas">
+          <button class="coca" onclick ="selecionarBebida(this)"><img src="imagens/coca.png"> 
+            <h4>Coca-cola</h4>
+            <h3>Lata 350ml</h3>
+            <h5>5.00</h5>
+          </button>
+        </div>
+        <div class="bebidas">
+          <button class="fanta" onclick ="selecionarBebida(this)"><img src="imagens/coca.png"> 
+            <h4>Fanta</h4> 
+            <h3>Lata 350ml</h3>
+            <h5>4.50</h5>
+          </button>
+        </div>
+        <div class="bebidas">
+          <button class="suco" onclick ="selecionarBebida(this)"><img src="imagens/suco.png"> 
+            <h4>Suco</h4> 
+            <h3>Jarra 1 Lt</h3>
+            <h5>12.70</h5>
+          </button>
+        </div>
+    </div>
+    <h2> Por fim, sua sobremesa</h2>
+    <div class="sobremesa">
+        <div class="doces">
+          <button class="mouse" onclick="selecionarSobremesa(this)"><img src="imagens/mouse.jpg"> 
+            <h4>Mouse</h4> 
+            <h3>Maracuja</h3>
+            <h5>7.00</h5></button>
+        </div>
+        <div class="doces">
+          <button class="pudim" onclick="selecionarSobremesa(this)"><img src="imagens/pudim.jpg">
+            <h4>Pudim</h4> 
+            <h3>Leite</h3>
+            <h5>9.50</h5>
+          </button>
+          </div>
+        <div class="doces">
+          <button class="brownie" onclick="selecionarSobremesa(this)"><img src="imagens/brownie.jpg"> 
+            <h4>brownie</h4> 
+            <h3>Chocolate</h3>
+            <h5>6.90</h5>
+          </button>
+        </div>
+    </div>
+     </div>
+     <div class="barra-inferior">
+       <button class="confirmacao ">Selecione os 3 itens para fechar o pedido</button> 
+       <button class="confirmar-pedido escondido " onclick="finalizar()">Fechar pedido</button>
+     </div>
+   </div>
+   <script src="script.js"></script>
+  </body>
+  </html>
